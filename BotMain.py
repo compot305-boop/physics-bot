@@ -7,7 +7,7 @@ from maxio.keyboards import Button
 
 # --- ВСТАВЬТЕ СЮДА ВАШ ТОКЕН ---
 import os
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "f9LHodD0cOIglGy5fH5j-0R7l8r3-Mok5CdMlobidTCfRbe1BQl0uT_UnIJOOJ1yZxvwxEamnIFSi6u6WqNB")# --------------------------------
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
 
 app = MaxBot(token=BOT_TOKEN)
 
@@ -1747,3 +1747,4 @@ if __name__ == "__main__":
     threading.Thread(target=run_web, daemon=True).start()
     # Запускаем вашего бота (long polling)
     app.run()
+    
